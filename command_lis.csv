@@ -1,0 +1,11 @@
+Concept,Python/Pandas Syntax,What it does
+Reading Files,pd.read_csv('filename.csv'),"Loads your text file into a Pandas ""DataFrame"" (a 2D table, usually named df)."
+Filtering,df[df['Column'] == 'Value'],Creates a smaller table keeping only the rows that match your condition.
+Math / Summing,df['Column'].sum(),Adds up all the numbers in a specific column.
+Grouping,df.groupby('Date').sum(numeric_only=True),Smashes rows with the same Date together and adds up their numbers (perfect for daily totals).
+Exporting for HTML,df.to_dict(orient='records'),Converts the Pandas table into a standard Python list of dictionaries so Jinja2 can read it easily.
+
+Concept,Python/Jinja2 Syntax,What it does
+Environment setup,Environment(loader=FileSystemLoader('.')),Tells Jinja2 to look in your current folder for HTML templates.
+Load Template,env.get_template('template.html'),Loads your specific skeleton file.
+Render & Inject,template.render(data=my_python_variable),Shoves your calculated Python data into the HTML placeholders.

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L3adama Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light p-4">
+    <div class="container">
+        <h1 class="mb-4 text-primary fw-bold">Bank Balance: 179.74 MAD</h1>
+
+        <h3 class="mt-4 mb-3">Daily Summaries</h3>
+        <table class="table table-dark table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Date (Click to expand)</th>
+                    <th>Total Payout</th>
+                    <th>Total Input</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>
+                        <details>
+                            <summary class="fw-bold" style="cursor: pointer;">18/03/2026</summary>
+                            <div class="mt-2 p-3 bg-dark border border-secondary rounded text-start" style="font-size: 0.95em;">
+                                <strong class="text-warning mb-2 d-block">Bet Slips:</strong>
+                                
+                                    
+                                        
+                                        
+                                        
+                                            <span class="badge bg-success" style="width: 60px;">Won</span>
+                                        
+
+                                        <span class="ms-2">Payout: <strong>30.4 MAD</strong> | Input: 20 MAD</span><br>
+                                        <div class="text-secondary ms-5 mb-2" style="font-size: 0.9em;"><i>Teams:  Braga Ferencvarosi</i></div>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                            <span class="badge bg-success" style="width: 60px;">Won</span>
+                                        
+
+                                        <span class="ms-2">Payout: <strong>49.01 MAD</strong> | Input: 20 MAD</span><br>
+                                        <div class="text-secondary ms-5 mb-2" style="font-size: 0.9em;"><i>Teams:  Braga Ferencvarosi Barcelona Newcastle</i></div>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                            <span class="badge bg-success" style="width: 60px;">Won</span>
+                                        
+
+                                        <span class="ms-2">Payout: <strong>39.75 MAD</strong> | Input: 25 MAD</span><br>
+                                        <div class="text-secondary ms-5 mb-2" style="font-size: 0.9em;"><i>Teams:  Barcelona Newcastle</i></div>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                            <span class="badge bg-success" style="width: 60px;">Won</span>
+                                        
+
+                                        <span class="ms-2">Payout: <strong>168.12 MAD</strong> | Input: 40 MAD</span><br>
+                                        <div class="text-secondary ms-5 mb-2" style="font-size: 0.9em;"><i>Teams:  Tottenham Ateltico Liverpool Galatasaray Bayen Atlanta</i></div>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                            <span class="badge bg-danger" style="width: 60px;">Lost</span>
+                                        
+
+                                        <span class="ms-2">Payout: <strong>0.0 MAD</strong> | Input: 50 MAD</span><br>
+                                        <div class="text-secondary ms-5 mb-2" style="font-size: 0.9em;"><i>Teams:  Liverpool Galatasaray-Osimhen</i></div>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                            <span class="badge bg-success" style="width: 60px;">Won</span>
+                                        
+
+                                        <span class="ms-2">Payout: <strong>11.46 MAD</strong> | Input: 4 MAD</span><br>
+                                        <div class="text-secondary ms-5 mb-2" style="font-size: 0.9em;"><i>Teams:  Tottenham Atletico</i></div>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                            <span class="badge bg-warning text-dark" style="width: 60px;">Refund</span>
+                                        
+
+                                        <span class="ms-2">Payout: <strong>180.0 MAD</strong> | Input: 180 MAD</span><br>
+                                        <div class="text-secondary ms-5 mb-2" style="font-size: 0.9em;"><i>Teams:  Bahia Bragantino</i></div>
+                                        
+                                    
+                                
+                            </div>
+                        </details>
+                    </td>
+                    <td class="align-middle">478.74</td>
+                    <td class="align-middle">339</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <h3 class="mt-5 mb-3">Bank History</h3>
+        <table class="table table-dark table-sm table-bordered">
+            <thead class="table-secondary text-dark">
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Amount (MAD)</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>18/03/2026</td>
+                    <td>
+                        
+                        
+                            <span class="text-success fw-bold">+ Injection</span>
+                        
+                    </td>
+                    <td>40</td>
+                    <td class="text-secondary"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Only apply DataTables to the main betting table to keep the bank history clean
+            $('table.table-hover').DataTable({
+                "order": [[ 0, "desc" ]] // Sort by date descending by default
+            });
+        });
+    </script>
+</body>
+</html>
